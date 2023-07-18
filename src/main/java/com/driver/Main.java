@@ -9,16 +9,17 @@ class A {
 class B extends A {
     @Override
     public String meth() {
-        return "Method is overridden in extended class B";
+        return "Method is overridden in Extended class B";
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        A objA = new A();
-        System.out.println(objA.meth()); // Invoking method from class A
-        
         B objB = new B();
-        System.out.println(objB.meth()); // Method is overridden in extended class B
+        System.out.println(objB.meth());
+        
+        // To invoke the method from class A
+        A objA = new A();
+        System.out.println(objA.meth());
     }
 }
