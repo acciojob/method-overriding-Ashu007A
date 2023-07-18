@@ -15,11 +15,10 @@ class B extends A {
 
 public class Main {
     public static void main(String[] args) {
-        B objB = new B();
+        B obj1 = new B();
         System.out.println(objB.meth());
         
-        // To invoke the method from class A
-        A objA = new A();
+        B obj2 = new B();
         System.out.println(objA.meth());
     }
 }
